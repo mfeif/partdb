@@ -7,6 +7,12 @@ We dumped this Access db into a sqlite3 db using MDBtool, and wrote a Flask app 
 To adapt the database file itself,you will need [MDB Tools](https://github.com/mdbtools). This is available in Debian packages,
 MacOS brew, and probably other unix package repos.
 
+On a mac you can get this via:
+
+```bash
+brew install mdbtools
+```
+
 ## Populating the DB from the MDB dumps
 ```bash
 $ ./data/insert_csv.sh data/db1.mdb > data.sql # generate a file of INSERTs from the mdb
